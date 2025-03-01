@@ -16,7 +16,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
  /* Logo ve yazıyı dikey ortalamak için */
- .navbar-brand {
+ /* Logo ve yazıyı dikey ortalamak için */
+        .navbar-brand {
             display: flex;
             align-items: center;
             gap: 8px; /* Logo ile metin arasına boşluk ekler */
@@ -37,6 +38,57 @@
           display: flex;
           align-items: center;
         }
+        
+          
+  @media (max-width: 768px) {
+    .slider-img-container {
+      top: 20%;
+    }
+    
+    .form-container {
+      top: 60%;
+      width: 95%;
+      padding: 15px;
+    }
+    
+    .form-container .form-group label {
+      font-size: 14px;
+    }
+    
+    .form-container .form-control {
+      font-size: 14px;
+    }
+    
+    .form-container .btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .slider-img-container img {
+      max-height: 300px;
+    }
+    
+    .form-container {
+      top: 55%;
+      width: 100%;
+      padding: 10px;
+    }
+    
+    .form-container .form-group label {
+      font-size: 12px;
+    }
+    
+    .form-container .form-control {
+      font-size: 12px;
+    }
+    
+    .form-container .btn {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
 
     </style>
 </head>
@@ -97,32 +149,35 @@
           <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); user-select: none; ">
             <img src="img/slider-img.png" draggable="false" style="height: 475px; width: auto; user-select: none; " alt="Your Photo">
           </div>
-          <!-- Form Start -->
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40%; max-width: 500px; padding: 30px; border-radius: 10px; ">
-              <form>
-                  <div class="form-group text-light" style="background-color: rgb(45, 43, 133); border-radius: 5px;">
-                      <label for="nameSurname">Name and Surname</label>
-                      <input type="text" class="form-control" id="nameSurname" placeholder="Enter your name">
-                  </div>
-                  <div class="form-group text-light" style="background-color: rgb(45, 43, 133); border-radius: 5px;">
-                      <label for="emailAddress">Email Address</label>
-                      <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
-                  </div>
-                  <div class="form-group text-light" style="background-color: rgb(45, 43, 133); border-radius: 5px;">
-                      <label for="description">Description</label>
-                      <textarea class="form-control" id="description" rows="3" placeholder="Describe your issue..."></textarea>
-                  </div>
-                  <div class="custom-file mt-3" style="background-color: rgb(45, 43, 133); border-radius: 5px;">
-                      <input type="file" class="custom-file-input" id="customFile">
-                      <label class="custom-file-label text-dark" for="customFile">Choose file</label>
-                  </div>
-                  <div class="text-center mt-4">
-                      <button type="submit" class="btn btn-lg text-light" style="background-color: rgb(30, 28, 100);">Send Post</button>
-                  </div>
-              </form>
+                <!-- Form Start -->
+      <div class="form-container" style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 500px; padding: 20px; border-radius: 10px;">
+        <form>
+          <div class="form-group text-light" style="background-color: #302c84; border-radius: 10px;">
+            <label for="nameSurname">Name and Surname</label>
+            <input type="text" class="form-control" id="nameSurname" placeholder="Enter your name">
           </div>
-
-          <!--Form And-->
+          <div class="form-group text-light" style="background-color: #302c84; border-radius: 10px;">
+            <label for="emailAddress">Email Address</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+          </div>
+          <div class="form-group text-light" style="background-color: #302c84; border-radius: 10px;">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" rows="3" placeholder="Describe your issue..."></textarea>
+          </div>
+          <div class="custom-file mt-3" style="background-color: #302c84; border-radius: 10px; ">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label text-dark" for="customFile">Choose file</label>
+          </div>
+          <div class="text-center mt-4" border-radius: 10px; >
+            <button type="submit" class="btn btn-lg text-light" style="background-color:#302c84;">Send Post</button>
+          </div>
+        </form>
+      </div>
+      <!-- Form End -->
+    </div>
+  </div>
+</div>
+<!-- Slider End -->
 
       </div>
   </div>
@@ -136,8 +191,8 @@
               <img class="card-img-top" draggable="false"  src="img/2.1.jpg" alt="Card image cap">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">
-                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="bitcoin" font-family="inherit" background-color="#2d2b85" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget --></h5>
-                    <a href="https://tr.investing.com/crypto/bitcoin" draggable="false" class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #2d2b85;" target="_blank">Read More</a>
+                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="bitcoin" font-family="inherit" background-color="#04043c" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget --></h5>
+                    <a href="https://tr.investing.com/crypto/bitcoin" draggable="false" class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #04043c;" target="_blank">Read More</a>
                 <p class="card-text">
                 </div>
             </div>
@@ -145,9 +200,9 @@
               <img class="card-img-top"  draggable="false" src="img/2.2.jpg" alt="Card image cap">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">
-                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="xrp" font-family="inherit" background-color="#2d2b85" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget -->
+                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="xrp" font-family="inherit" background-color="#04043c" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget -->
                 </h5>
-                <a href="https://tr.investing.com/crypto/xrp" draggable="false"  class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #2d2b85;" target="_blank" >Read More</a>
+                <a href="https://tr.investing.com/crypto/xrp" draggable="false"  class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #04043c;" target="_blank" >Read More</a>
                 <p class="card-text">
                 </div>
             </div>
@@ -155,8 +210,8 @@
               <img class="card-img-top" draggable="false"  src="img/2.3.webp" alt="Card image cap" >
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">
-                <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="ethereum" font-family="inherit" background-color="#2d2b85" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget --> </h5>
-                    <a href="https://tr.investing.com/crypto/ethereum" draggable="false" class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #2d2b85 ;" target="_blank">Read More</a>
+                <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="ethereum" font-family="inherit" background-color="#04043c" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget --> </h5>
+                    <a href="https://tr.investing.com/crypto/ethereum" draggable="false" class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #04043c ;" target="_blank">Read More</a>
                 <p class="card-text">
                 </div>
             </div>
@@ -167,9 +222,9 @@
               <img class="card-img-top" src="img/2.4.jpg" alt="Card image cap" >
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">
-                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="solana" font-family="inherit" background-color="#2d2b85" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget -->
+                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="solana" font-family="inherit" background-color="#04043c" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget -->
                 </h5>
-                    <a href="https://tr.investing.com/crypto/solana" draggable="false" class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #2d2b85;" target="_blank">Read More</a>
+                    <a href="https://tr.investing.com/crypto/solana" draggable="false" class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #04043c;" target="_blank">Read More</a>
                 <p class="card-text">
                 </div>
             </div>
@@ -177,8 +232,8 @@
               <img class="card-img-top" draggable="false"  src="img/2.5.jpg" alt="Card image cap">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">
-                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="tether" font-family="inherit" background-color="#2d2b85" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget --></h5>
-                <a href="https://tr.investing.com/crypto/tether" draggable="false"  class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #2d2b85;" target="_blank" >Read More</a>
+                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="tether" font-family="inherit" background-color="#04043c" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget --></h5>
+                <a href="https://tr.investing.com/crypto/tether" draggable="false"  class="btn btn-primary stretched-link mt-auto" style="border-radius: 7px; background-color: #04043c;" target="_blank" >Read More</a>
                 <p class="card-text">
                 </div>
             </div>
@@ -186,8 +241,8 @@
               <img class="card-img-top" draggable="false" src="img/2.6.webp" alt="Card image cap" >
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">
-                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="binance-coin" font-family="inherit" background-color="#2d2b85" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget --></h5>
-                    <a href="https://tr.investing.com/crypto/bnb" draggable="false" class="btn btn-primary stretched-linkp mt-auto" style="border-radius: 7px; background-color: #2d2b85;" target="_blank">Read More</a>
+                    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget amount="1" shadow="true" symbol="true" live="true" fiat="united-states-dollar" crypto="binance-coin" font-family="inherit" background-color="#04043c" decimal-places="2" border-radius="0.5rem"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget --></h5>
+                    <a href="https://tr.investing.com/crypto/bnb" draggable="false" class="btn btn-primary stretched-linkp mt-auto" style="border-radius: 7px; background-color: #04043c;" target="_blank">Read More</a>
                 <p class="card-text">
                 </div>
             </div>

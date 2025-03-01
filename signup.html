@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <title>Login Page</title>
+    <title>Sign Up Page</title>
 
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=zrfbOwiXU3qDrT5O2Ae8a8e9z-U-FPLfHGiCAFVJ-v9j4Q8_h0wjbIGgf2Nbw9JEhIAaT-DUwk2a1v3EStgTqGKd2Tv0BKOozph-kLkR3M8kx1NMuxQvXJZ6ELLkSKKeHf5xABKP-MUaw11pnfkZ21otiAOIQT62HiL351DNeK5e5HRF07FBlPlVx0SylO9o0iMpL-eXXtInc2Cty11V-ocqIRpIuU3UCMS_FcE7Z6qhXtXuYYnqi3n1_ZOcvPo3LP-FrfS4Hu7MOCM54xiEDw" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTM0MzczODk4NTc3OTgyNjc5MC8xMzQ1NDkwMDkwNzE3MzUxOTM2L2xvZ2lucGFnZS5odG1sP2V4PTY3YzRiY2NiJmlzPTY3YzM2YjRiJmhtPWVlZWZiNDJjNTFmMmZjNWFmYzczOTk5Y2Q4NWI2NmUzZjFlNjg1NjhkZDYzNGU3NjE2YTdjNTY2ZDI0ZTNlMmEm"/><style>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=qES6qYlgfRuLwjzyxJvy-EtQmjVdA7LLL1VavNFRsJEFMM0CdGzIvBI2hLJTTCpGbzRgVwnDpkw9LBM5tmeZSp_UPRUYp2bto-G9E6sEgv1h0BgGIhH_wNzSYA8ad0RSEmsYaVQHzLY3o83gh75TBaIxwc4f8kARmXUlQSx-0DpsT3KpRgY65apXQrnDC2B1VceACnr3Bsh5WSyA1DeOiA0v48M9ixjAaBWbkgd5AQkIYD5XT4_f3ps-7vJv9HxHiW8tNivB8d5_iaJg-38B6g" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTM0MzczODk4NTc3OTgyNjc5MC8xMzQ1NDkwMTM4MzUxOTMxNDUzL3NpZ251cC5odG1sP2V4PTY3YzRiY2Q2JmlzPTY3YzM2YjU2JmhtPWJkOTRmMGJlNDVlNThlN2U5ZDI4YTIxMDZjN2EyYjk3MTNhZjlkMzBlNjM3MjFjMmJhOWM0YzZjZDc3YTVlMWYm"/><style>
 
 .news {
             border: none;
@@ -125,10 +125,10 @@
     <!-- İçerik Bölümü -->
     <div class="container content-wrapper">
       <div class="row d-flex justify-content-center align-items-center w-100">
-        <div class="col-md-9 col-lg-6 col-xl-6">
+        <div class="col-md-9 col-lg-6 col-xl-6 pt-5">
           <img src="img/bitcoin.png" class="img-fluid" alt="Sample image">
         </div>
-        <div class="col-md-8 col-lg-6 col-xl-5">
+        <div class="col-md-8 col-lg-6 col-xl-5" style="margin-top: 150px;">
           <form>
             <div class="d-flex flex-row align-items-center justify-content-center">
               <p class="lead fw-normal mb-0 me-3 text-white">Sign in with</p>
@@ -149,15 +149,21 @@
 
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" class="form-control form-control-lg" placeholder="Enter a valid email address">
-              <label class="form-label text-white">Email address</label>
-            </div>
+                <input type="email" class="form-control form-control-lg" placeholder="Enter a valid email address">
+                <label class="form-label text-white">Email address</label>
+              </div>
 
             <!-- Password input -->
             <div class="form-outline mb-3">
               <input type="password" class="form-control form-control-lg" placeholder="Enter password">
               <label class="form-label text-white">Password</label>
             </div>
+
+            <!-- Confirm password input -->
+            <div class="form-outline mb-3">
+                <input type="password" class="form-control form-control-lg" placeholder="Confirm password">
+                <label class="form-label text-white">Confirm Password</label>
+              </div>
 
             <div class="d-flex justify-content-between align-items-center">
               <div class="form-check mb-0">
@@ -169,7 +175,7 @@
 
             <div class="text-center text-lg-start mt-4 pt-2">
               <button type="button" class="btn btn-primary btn-lg">Login</button>
-              <p class="small fw-bold mt-2 pt-1 mb-0 text-white">Don't have an account? <a href="signup.html" class="link-danger">sign up</a></p>
+              <p class="small fw-bold mt-2 pt-1 mb-0 text-white">Have an account? <a href="#" class="link-danger">Login</a></p>
             </div>
           </form>
         </div>
